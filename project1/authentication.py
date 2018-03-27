@@ -10,4 +10,8 @@ def login(username, password):
             return True
         else:
             return False
-    
+    except Exception, exc:
+        print "I can't authenticate you."
+        return False
+def logout():
+    print 'You are now logged out.'
